@@ -6,13 +6,7 @@ public class PrimeFactor {
     public List<Integer> of(int number) {
         ArrayList<Integer> factors = new ArrayList<>();
         if (number > 1) {
-            int devisor = 2;
-            if (number == 4) {
-                while (number % devisor == 0) {
-                    factors.add(devisor);
-                    number /= devisor;
-                }
-            } else if (number == 6 || number == 9) {
+            if (number == 4 || number == 6 || number == 9) {
                 for (devisor = 2; number > 1; devisor++) {
                     while (number % devisor == 0) {
                         factors.add(devisor);
