@@ -1,12 +1,14 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class PrimeFactorTest {
 
     @Test
-    void testPrimeFactor1() {
+    void testPrimeFactorOf1() {
         PrimeFactor primeFactor = new PrimeFactor();
-        assertNotNull(primeFactor);
+        assertEquals(Arrays.asList(), primeFactor.of(1));
     }
 }
